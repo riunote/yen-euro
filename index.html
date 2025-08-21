@@ -11,11 +11,15 @@
     <h1>円 € 比較</h1>
     <p>計算比較</p>
   </header>
+  <input type="number" id="num">
+  <button onclick="calc()">計算</button>
+
   <script>
-  let x = prompt("数字を入力してください:");
-  alert("入力値は " + x);
+  function calc() {
+    let x = document.getElementById("num").value; // ← 入力値を取る
+    alert("日本円で" + x);
+  }
   </script>
-  
   
 </body>
 </html>
